@@ -100,3 +100,64 @@ p {
 }
 
 /* DIA 14 ----------------------- */
+
+.div_background_14 {
+    background-color: #cecece;
+    padding: 30px;
+    border: #c50000 solid;
+}
+
+.dia14 {
+    width: 350px;
+}
+
+.boton_14 {
+    background-color: #c50000;
+    color: #ffffff;
+    width: 130px;
+    height: 40px;
+    font-weight: lighter;
+
+    display: flex;            
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.boton_14:hover {
+    background-color: #00AA00;
+}
+
+/* DIA 15 ----------------------- */
+
+.dia15 {
+    width: 100px;
+    transition: width 0.5s;
+}
+
+.div_15_1 {
+    background-color: #ffcc00;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.div_15_2 {
+    background-color: #c50000;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.texto_15 {
+    color: #ffffff;
+    font-weight: lighter;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.dia15:hover {
+    width: 300px;
+}
+
+/* DIA 16 ----------------------- */
