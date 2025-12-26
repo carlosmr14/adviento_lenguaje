@@ -1,3 +1,5 @@
+/* DIA 10 ----------------------- */
+
 .regalo {
     background-color: #c50000;
     width: 150px;
@@ -22,7 +24,7 @@ p {
     padding-left: 10px;
 }
 
-/* ----------------------- */
+/* DIA 11 ----------------------- */
 
 .grid_11 {
     display: inline-grid;
@@ -45,7 +47,7 @@ p {
     width: 50px;
 }
 
-/* ----------------------- */
+/* DIA 12 ----------------------- */
 
 .flex_div {
     display: flex;
@@ -73,3 +75,28 @@ p {
 .p_12 {
     margin: 0;
 }
+
+
+/* DIA 13 ----------------------- */
+
+.div_background_13 {
+    background-color: #dbb50d;
+}
+
+.texto_dia13 {
+    text-align: center;
+    padding: 40px;
+}
+
+.p_dia13 {
+    color: #ffffff;
+    font-weight:lighter;
+}
+
+@media (max-width: 600px) {
+    .div_background_13 {
+    background-color: #d70528;
+    }
+}
+
+/* DIA 14 ----------------------- */
