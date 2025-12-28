@@ -162,6 +162,120 @@ p {
 
 /* DIA 16 ----------------------- */
 
-.dia {
-    background-color: #000a90;
+.table16 th {
+    background-color: #00AA00;
+    color: #ffffff;
+    width: 600px;
+    border: #000661 solid;
+    padding: 12px 15px;
+    text-align: left;
+
+}
+
+.table16 {
+    border: #000661 solid;
+    border-collapse: collapse; 
+}
+
+.table16 td {
+    border: #000661 solid;
+    padding: 12px 15px;
+}
+
+.table16 tr:nth-child(even) {
+    background-color: #e0e0e0;
+}
+
+/* DIA 17 ----------------------- */
+
+.dia17 {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+.copo {
+    width: 4px;
+    height: 60px;
+    background-color: blue;
+    position: relative;
+    /* 🎯 TRANSICIÓN: Para que el cambio de color sea suave */
+    transition: background-color 0.5s ease, transform 0.5s ease;
+    cursor: pointer;
+}
+
+/* 🎯 HOVER: Esto es lo que faltaba. Cambiamos el color al pasar el ratón */
+.copo:hover {
+    background-color: red; /* O el color que prefieras */
+    transform: rotate(180deg); /* Opcional: hace que el copo gire al tocarlo */
+}
+
+.copo::before, .copo::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* 🎯 CLAVE: Al usar inherit, cambian de color automáticamente con el padre */
+    background-color: inherit; 
+    top: 0;
+    left: 0;
+    transition: background-color 0.5s ease;
+}
+
+.copo::before {
+    transform: rotate(60deg);
+}
+
+.copo::after {
+    transform: rotate(-60deg);
+}
+
+/* DIA 18 ----------------------- */
+
+.dia18 {
+    margin-top: 30px;
+}
+
+.grinch {
+    width: 300px;
+    filter: grayscale(0%) blur(0px);
+    transition: filter 0.5s ease;
+}
+
+.grinch:hover {
+    filter: grayscale(50%) blur(3px);
+}
+
+/* DIA 19 ----------------------- */
+
+.dia19 {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.imagenes_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 150px); 
+    grid-template-rows: repeat(2, 150px) auto; 
+    gap: 15px;
+}
+
+.imagenes_grid img {
+    height: 100%;
+}
+
+.imagen_grande {
+    grid-column: span 2; 
+    grid-row: span 2; 
+}
+
+.imagen_pie {
+    height: 100px !important; 
+    object-fit: contain !important;
 }
