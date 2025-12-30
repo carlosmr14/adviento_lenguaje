@@ -2,7 +2,7 @@
 
 /* DIA 9 ----------------------- */
 
-.dia29 {
+.dia9 {
     background-color: #001529;
     height: 400px;
     width: 100%;
@@ -243,7 +243,7 @@
 
 .dia17 {
     width: 100%;
-    height: 150px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -253,34 +253,30 @@
 
 .copo {
     width: 4px;
-    height: 60px;
-    background-color: #0f00e0;
+    height: 50px;
+    background-color: blue;
     position: relative;
-    transition: transform 0.5s ease;
-    cursor: pointer;
 }
 
-.copo:hover {
-    transform: rotate(180deg);
-}
-
-.copo::before, .copo::after {
+.copo::before, 
+.copo::after {
     content: "";
     position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: inherit; 
     top: 0;
     left: 0;
-    transition: background-color 0.5s ease;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
 }
 
-.copo::before {
+.copo:hover::before {
     transform: rotate(60deg);
+    transition: transform 0.5s ease;
 }
 
-.copo::after {
+.copo:hover::after {
     transform: rotate(-60deg);
+    transition: transform 0.5s ease;
 }
 
 
@@ -454,7 +450,7 @@
 
 /* DIA 24 ----------------------- */
 
-.escena-final {
+.escena_final {
     display: grid;
     grid-template-columns: 250px 250px 250px;
     gap: 10px;
@@ -463,43 +459,42 @@
         "regalos arbol chimenea"
         "footer footer footer";
     margin-top: 20px;
-    font-family: sans-serif;
 }
 
-.nav-final, .pie-final {
-    background-color: #2c3e50;
-    color: white;
+.nav_final, .pie_final {
+    background-color: #1d4166;
+    color: #ffffff;
     padding: 10px;
 }
 
-.nav-final { 
+.nav_final { 
     grid-area: header;
 }
-.pie-final { 
+.pie_final { 
     grid-area: footer;
 }
 
-.regalos-lateral {
+.regalos_lateral {
     grid-area: regalos;
-    background-color: #a29bfe;
+    background-color: #5148d1;
     height: 300px;
     padding: 10px;
 }
 
 .chimenea {
     grid-area: chimenea;
-    background-color: #ff7675;
+    background-color: #f84f4f;
     height: 300px;
     padding: 10px;
 }
 
-.arbol-contenedor {
+.arbol_div {
     grid-area: arbol;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f9f9f9;
+    background-color: #e7e7e7;
 }
 
 .arbol-contenedor img {
@@ -509,14 +504,13 @@
 
 .estrella {
     position: absolute;
-    top: 20px;
+    top: 40px;
     font-size: 2.5rem;
     transition: transform 0.5s ease;
 }
 
 .estrella:hover {
     transform: scale(1.3) rotate(360deg);
-    cursor: pointer;
 }
 
 
