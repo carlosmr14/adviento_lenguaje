@@ -1,3 +1,47 @@
+
+
+/* DIA 9 ----------------------- */
+
+.dia29 {
+    background-color: #001529;
+    height: 400px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.bola {
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 50%;
+    top: -20px;
+    opacity: 0.8;
+    animation: caer linear infinite; 
+}
+
+@keyframes caer {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(420px);
+        opacity: 0;
+    }
+}
+
+.bola:nth-child(1) { left: 20%; width: 10px; height: 10px; animation-duration: 4s; }
+.bola:nth-child(2) { left: 40%; width: 6px; height: 6px; animation-duration: 6s; animation-delay: 1s; }
+.bola:nth-child(3) { left: 60%; width: 12px; height: 12px; animation-duration: 5s; animation-delay: 2s; }
+.bola:nth-child(4) { left: 80%; width: 8px; height: 8px; animation-duration: 7s; }
+
+
 /* DIA 10 ----------------------- */
 
 .regalo {
@@ -19,10 +63,11 @@
     border-radius: 100%;
 }
 
-p {
+.regalo10 {
     font-weight: bold;
     padding-left: 10px;
 }
+
 
 /* DIA 11 ----------------------- */
 
@@ -47,25 +92,28 @@ p {
     width: 50px;
 }
 
+
 /* DIA 12 ----------------------- */
 
 .flex_div {
     display: flex;
-    background-color: #22b42b;
-    height: 50px;
-    gap: 80px;
     justify-content: center;
-    padding-left: 150px;
-    padding-right: 150px;
+    background-color: #22b42b;
+    height: auto;
+    gap: 10%;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .div_background_12 {
-    color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #ffffff;
     cursor: pointer;
-    padding: 0 15px;
+    padding: 20px 20px;
 }
 
 .div_background_12:hover {
@@ -74,6 +122,7 @@ p {
 
 .p_12 {
     margin: 0;
+    font-weight: bold;
 }
 
 
@@ -98,6 +147,7 @@ p {
     background-color: #d70528;
     }
 }
+
 
 /* DIA 14 ----------------------- */
 
@@ -127,6 +177,7 @@ p {
 .boton_14:hover {
     background-color: #00AA00;
 }
+
 
 /* DIA 15 ----------------------- */
 
@@ -160,6 +211,7 @@ p {
     width: 300px;
 }
 
+
 /* DIA 16 ----------------------- */
 
 .table16 th {
@@ -186,6 +238,7 @@ p {
     background-color: #e0e0e0;
 }
 
+
 /* DIA 17 ----------------------- */
 
 .dia17 {
@@ -201,17 +254,14 @@ p {
 .copo {
     width: 4px;
     height: 60px;
-    background-color: blue;
+    background-color: #0f00e0;
     position: relative;
-    /* 🎯 TRANSICIÓN: Para que el cambio de color sea suave */
-    transition: background-color 0.5s ease, transform 0.5s ease;
+    transition: transform 0.5s ease;
     cursor: pointer;
 }
 
-/* 🎯 HOVER: Esto es lo que faltaba. Cambiamos el color al pasar el ratón */
 .copo:hover {
-    background-color: red; /* O el color que prefieras */
-    transform: rotate(180deg); /* Opcional: hace que el copo gire al tocarlo */
+    transform: rotate(180deg);
 }
 
 .copo::before, .copo::after {
@@ -219,7 +269,6 @@ p {
     position: absolute;
     width: 100%;
     height: 100%;
-    /* 🎯 CLAVE: Al usar inherit, cambian de color automáticamente con el padre */
     background-color: inherit; 
     top: 0;
     left: 0;
@@ -233,6 +282,7 @@ p {
 .copo::after {
     transform: rotate(-60deg);
 }
+
 
 /* DIA 18 ----------------------- */
 
@@ -249,6 +299,7 @@ p {
 .grinch:hover {
     filter: grayscale(50%) blur(3px);
 }
+
 
 /* DIA 19 ----------------------- */
 
@@ -280,6 +331,7 @@ p {
     object-fit: contain !important;
 }
 
+
 /* DIA 20 ----------------------- */
 
 .dia20 {
@@ -307,6 +359,7 @@ p {
     line-height: 1.4;
 }
 
+
 /* DIA 21 ----------------------- */
 
 .dia21 {
@@ -327,6 +380,7 @@ p {
 .bola-cristal:hover {
     transform: rotate(360deg) scale(1.5);
 }
+
 
 /* DIA 22 ----------------------- */
 
@@ -365,6 +419,7 @@ p {
     background-color: #e0e0e0;
 }
 
+
 /* DIA 23 ----------------------- */
 
 .dia23 {
@@ -395,6 +450,7 @@ p {
     margin-top: 15px;
     text-shadow: 3px 3px 3px #000000;
 }
+
 
 /* DIA 24 ----------------------- */
 
@@ -463,28 +519,113 @@ p {
     cursor: pointer;
 }
 
+
 /* DIA 25 ----------------------- */
 
 .dia25 {
     margin-top: 40px;
-    font-family: Arial, sans-serif;
 }
 
-.titulo-navidad {
-    font-size: 2rem;
-    margin: 20px 0 20px 0;
+.h1navidad {
+    font-size: 5rem;
     color: #e74c3c;
-    
-    text-shadow: 
-        2px 2px 0px #f1c40f,
-        4px 4px 0px #27ae60;
+    text-shadow: 2px 2px 0px #f1c40f,4px 4px 0px #27ae60;
 }
 
-.mensaje-oculto {
+.mensaje_oculto {
     color: #000000;
     opacity: 0;
 }
 
-.contenedor-secreto:hover .mensaje-oculto {
+.div_secreto:hover .mensaje_oculto {
     opacity: 1;
+}
+
+
+/* DIA 26 ----------------------- */
+
+.barra_fija {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* DIA 27 ----------------------- */
+
+.dia27 {
+    margin-top: 40px;
+}
+
+.form_propositos {
+    display: flex;
+    gap: 10px;
+}
+
+.form_propositos input {
+    padding: 8px;
+    border: 1px solid #787878;
+}
+
+.form_propositos input:invalid:not(:placeholder-shown) {
+    border: 2px solid red;
+}
+
+.form_propositos input:valid {
+    border: 2px solid green;
+}
+
+.form_propositos button {
+    padding: 8px 15px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #898989;
+}
+
+
+/* DIA 28 ----------------------- */
+
+.dia28 {
+    margin-top: 40px;
+}
+
+.contenedor-columnas {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.columna-azul {
+    flex: 1;
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 768px) {
+    .contenedor-columnas {
+        flex-direction: column;   
+    }
+}
+
+
+/* boton_subir */
+
+.volver_arriba {
+    background-color: #f0f0f0;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: #b0b0b0 solid 2px;
+    border-radius: 10px;
+}
+
+.volver_arriba:hover {
+    background-color: #9fccff;
 }
